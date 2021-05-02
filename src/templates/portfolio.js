@@ -26,7 +26,6 @@ export const pageQuery = graphql`
     blogPost: contentfulBlogPost(slug: { eq: $slug }) {
       slug
       title
-      body
     }
   }
 `
