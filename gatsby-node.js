@@ -1,5 +1,5 @@
 const path = require("path")
-const slash = require("slash")
+// const slash = require("slash")
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
@@ -27,7 +27,8 @@ exports.createPages = ({ graphql, actions }) => {
       result.data.allContentfulBlogPost.edges.forEach(blogPost => {
         createPage({
           path: `/posts/${blogPost.node.slug}/`,
-          component: slash(portfolioTemplate),
+//           component: slash(portfolioTemplate),
+          component: portfolioTemplate,
           context: {
             slug: blogPost.node.slug,
           },
