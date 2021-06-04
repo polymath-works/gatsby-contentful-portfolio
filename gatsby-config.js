@@ -14,8 +14,8 @@ module.exports = {
       pinterest: "https://pinterest.com/",
     },
     locale: "en",
-    title: `John Doe`,
-    description: `Photography portfolio of John Doe`,
+    title: `Andira Hayder`,
+    description: `Learning Experience Designer`,
     author: `@johndoe`,
   },
   plugins: [
